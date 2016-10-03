@@ -61,6 +61,10 @@
       padding: 10px 15px;
       cursor: pointer;
     }
+
+    .author-mobile-data {
+      display: none;
+    }
   }
   .one, .two {
     height: 100%;
@@ -101,6 +105,11 @@
       color: rgba(36, 127, 164, 0.85);
     }
   }
+
+  .download {
+    color: #247fa4;
+  }
+
   .one {
     h4 {
       background-color: #247FA4;
@@ -111,9 +120,12 @@
     .author-desktop {
       background-color: rgba(170, 178, 190, 1);
     }
-    .author-mobile {
+    .author-mobile, .author-mobile-data {
       background-color: #247FA4;
       color: #AAC6DA;
+      a {
+        color: #AAC6DA;
+      }
     }
   }
   .two {
@@ -126,9 +138,12 @@
     .author-desktop {
       background-color: rgba(228, 143, 148, 1);
     }
-    .author-mobile {
+    .author-mobile, .author-mobile-data {
       background-color: #AF3B54;
       color: #F2AFBD;
+      a {
+        color: #F2AFBD;
+      }
     }
   }
   tr.main-title {
@@ -145,7 +160,7 @@
     .author-desktop {
       display: none !important;
     }
-    .author-mobile {
+    .author-mobile, .author-mobile-data {
       display: none !important;
     }
     h4.arrow_box {
@@ -207,6 +222,19 @@
         display: block;
         span.more {
           float: right;
+        }
+
+        a {
+          float: right;
+          margin-right: 10px;
+        }
+      }
+      .author-mobile-data {
+        display: block;
+        text-align: right;
+        a {
+          display: block;
+          margin-right: 10px;
         }
       }
     }
@@ -289,11 +317,13 @@
           li {
             display: inline-block;
           }
-          li + li {
+          li:after {
+            content: "|";
+            color: #ccc;
             margin-left: 10px;
-            padding-left: 10px;
-            border-left: 1px solid #ccc;
-            line-height: 14px;
+          }
+          li:last-child:after {
+            content: "";
           }
           a {
             color: #999;

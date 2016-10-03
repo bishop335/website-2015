@@ -51,7 +51,7 @@ class About extends Component {
                 <ul>
                   <li>日京三子</li>
                   <li>丞相</li>
-                  <li>cjoker</li>
+                  <li>CJOKER</li>
                   <li>牙牙</li>
                   <li>鐵人</li>
                   <li>裕珊</li>
@@ -155,6 +155,17 @@ class About extends Component {
             <div className="icon"><i className="icon-line"></i></div>
             <div className="work-wrapper">
               <h4 className="work">線路<a href="http://cprteam.org" target="_blank"><span className="leader">CPR Team</span></a></h4>
+            </div>
+          </div>
+          <div className="pure-u-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4 speaker">
+            <div className="icon"><i className="icon-sponsor"></i></div>
+            <div className="work-wrapper">
+              <h4 className="work">特工<span className="leader">Oreo</span></h4>
+              <div>
+                <ul>
+                  <li>Ninja</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
